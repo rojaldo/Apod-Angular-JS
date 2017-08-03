@@ -1,0 +1,38 @@
+<div class="component">
+
+  <div class="container">
+
+    <div class="jumbotron" style="margin-top:30px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3">
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+            <div style="display:inline-block; min-height:290px;">
+              <div uib-datepicker ng-model="dt" class="well well-sm" datepicker-options="options" ng-change="request()"></div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+          </div>
+        </div>
+
+
+        <h1>{{apodToday.title}}</h1>
+        <h4>{{apodToday.date}}</h4>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+            <ng-youtube-embed video="apodToday.url" autoplay="true" color="white" disablekb="true" end="20" ng-if="apodToday.media_type == 'video'">
+            </ng-youtube-embed>
+                    <p><img src="{{apodToday.url}}" alt="" ng-show="apodToday.media_type == 'image'" style="max-width: 100%"></p>
+          </div>
+        </div>
+
+        <p>{{apodToday.explanation}}</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="{{apodToday.hdurl}}" ng-show="apodToday.title!=undefined">Descarga HD</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

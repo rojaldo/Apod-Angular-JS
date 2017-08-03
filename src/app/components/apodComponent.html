@@ -1,0 +1,19 @@
+<div class="component">
+  
+  <div class="container">
+    
+    <div class="jumbotron">
+      <div class="container">
+        <h1>{{apodToday.title}}</h1>
+        <h4>{{apodToday.date}}</h4>
+        <p><img src="{{apodToday.url}}" alt="" ng-show="apodToday.media_type == 'image'" style="max-width: 100%"></p>
+        <p>{{apodToday.explanation}}</p>
+        <p>
+          <a class="btn btn-primary btn-lg" href="{{apodToday.hdurl}}">Descarga HD</a>
+        </p>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
