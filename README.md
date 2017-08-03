@@ -4,41 +4,29 @@ NASA APOD API use to show astronomical picture of the day
 
 ## Getting Started
 
-1.- Download or clone this project.
-2.- Change DEMO_KEY to yor API APOD KEY
-3.- Install modules <b>npm install</b>
-4.- Build the app <b>npm run build</b>
-5.- Launch the app <b>npm run serve</b> 
+* Download or clone this project.
+* Change DEMO_KEY to yor API APOD KEY
+* Install modules <b>npm install</b>
+* Build the app <b>npm run build</b>
+* Launch the app <b>npm run serve</b> 
 
 ### Prerequisites
 
 You need NodeJS and npm to install necesaries packages
 
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
-<b>npm run tests</b>
+```
+npm run test
+```
 
 ## Deployment
 
-run <b>npm run build</b> to generate distribution files in folder /dist
+run to generate distribution files in folder /dist
+
+```
+npm run build
+```
 
 ## Built With
 
