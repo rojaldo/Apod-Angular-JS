@@ -78,9 +78,6 @@
       "browser": true,
       "jasmine": true
     },
-    "parser": "babel-eslint",
-    "extends": [
-      "xo-space/esnext"
-    ]
+    "parser": "babel-eslint"
   }
 }

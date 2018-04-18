@@ -1,8 +1,12 @@
+import {ApodService} from '../services/apodService';
+
 class ApodComponentController {
   constructor($scope, $http) {
     this.text = 'My brand new component!';
     const apodUrl = 'https://api.nasa.gov/planetary/apod';
     const apiKey = 'DEMO_KEY';
+
+    this.text = ApodService.getData();
 
     function onFetchComplete(success) {
       $scope.apodToday = success.data;
